@@ -1,0 +1,69 @@
+/* General Styles */
+:root {
+    --gradient-start: #006400; /* Dark Green */
+    --gradient-end: #00ff00;  /* Green */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black; /* Changed to black */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; /* Adjusted for better readability on a black background */
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 20px;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(180deg, var(--gradient-start), var(--gradient-end)); /* Updated gradient */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(180deg, var(--gradient-end), var(--gradient-start)); /* Reverse gradient on hover */
+}
+
+/* Links */
+a {
+    color: var(--gradient-end); /* Updated color for contrast */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+input, select, textarea {
+    border: 1px solid var(--gradient-start); /* Green border */
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background: black;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 8px 16px;
+    }
+}
